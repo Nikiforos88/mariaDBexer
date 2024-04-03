@@ -1,0 +1,23 @@
+{
+  "name": "postapp",
+  "version": "1.0.0",
+  "description": "Users and Products app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "users",
+    "products"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0",
+    "typeorm": "^0.3.20"
+  }
+}
