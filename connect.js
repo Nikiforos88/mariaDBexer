@@ -6,9 +6,9 @@ const ProductEntity = require('./model/Product').ProductEntity;
 
 const dataSource = new typeorm.DataSource({
     type: "mariadb",
-    port: 3306,
+    port: process.env.exports,
     host: process.env.HOST,
-    user: process.env.USER,
+    username: process.env.USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
     synchronize: true,
