@@ -1,10 +1,10 @@
 const EntitySchema = require('typeorm').EntitySchema;
 
 class User {
-    // constructor(id, name) {
-    //     this.id = id;
-    //     this.name = name
-    // }
+    constructor(id, name) {
+        this.id = id;
+        this.name = name
+    }
 }
 
 const UserEntity = new EntitySchema({

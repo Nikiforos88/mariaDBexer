@@ -18,11 +18,11 @@ const dataSource = new typeorm.DataSource({
 dataSource
     .initialize()
     .then( function() {
-        console.log('Connected to database');
+        console.log('Connected to database ✅');
         
     })
     .catch( function(error) {
-        console.log("Problem connection database" + error);
+        console.log("Problem connection database ❌" + error);
     });
 
 module.exports = { dataSource };
