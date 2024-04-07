@@ -31,7 +31,7 @@ exports.create = async (req, res) => {
 
     try {
         const result = await productService.create(product_name, cost, description, quantity);
-        res.status(201).json({ data: result });
+        res.status(200).json({ data: result });
         console.log("Success in inserting product");
     } catch (err) {
         res.status(500).json({ error: err.message });
